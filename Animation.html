@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            .main{
+                width: 500px;
+                height: 500px;
+                border: 10px red double;
+                margin: auto;
+                margin-top: 50px;
+                background: aqua;
+                position: relative;
+            }
+            .main1{
+                width: 100px;
+                height: 100px;
+                color: white;
+                font-size: 35px;
+                text-align: center;
+                text-shadow: -5px -5px 3px red;
+                background-color:black;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                animation-name: main1;
+                animation-duration: 10s;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-fill-mode: both;
+                animation-direction: normal;
+            }
+            @keyframes main1{
+                0%{
+                    top: 0px;
+                    left: 0px;
+                }
+                25%{
+                    top: 0px;
+                    left: 400px;
+                    background-color: greenyellow;
+                }
+                50%{
+                    top: 400px;
+                    left: 400px;
+                    background-color: green;
+
+                }
+                75%{
+                    top: 400px;
+                    left: 0px;
+                    background-color: blueviolet;
+                }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                    background-color: black;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="main1">Hey Rahul</div>
+        </div>
+    </body>
+</html>
