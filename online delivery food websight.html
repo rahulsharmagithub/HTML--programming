@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online food delivery services in india</title>
+    <style>
+         /* Css Reset */
+
+ * {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* Nevigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Nevigatin bar : logo and image */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 60px;
+    margin: 3px 6px;
+    border-radius: 100%;
+}
+
+/* Nevigation bar: list styling */
+
+#navbar ul {
+    display: flex;
+}
+
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(istockphoto-4.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Services section  */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 3px solid green;
+    height: 300px;
+    padding: 5px 7px;
+    background-color: rgb(244, 237, 237);
+    margin: -24px 10px;
+    border-radius: 30px;
+
+}
+
+#services .box h2 {
+    font-size: 3rem;
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 100%;
+}
+
+/* Client section */
+#client-section {
+    height: 335px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(food.webp)no-repeat center center/cover;
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 25px;
+}
+
+#clients img {
+    border-radius: 100%;
+    height: 100px;
+}
+
+/* Contact section  */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url(contact\ image.jfif) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 25%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility classes */
+.h-primary {
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 7px 20px;
+    font-size: 17px;
+    border-radius: 15px;
+    border: 2px solid white;
+    color: white;
+    background-color: red;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Rahul image.2.jpg" height="70px" width="50px" alt="My online mile.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Contect us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to my online food delivery plateform</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus, hic voluptate facilis adipisci
+            repudiandae doloremque totam qui nulla sint?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus,</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="breakfast.jpg" alt="">
+                <h2 class="h-secondary center">Breakfast Ordering</h2>
+                <p class="center">Hello i am rahul sharma i develop a food online company in our countary maiores
+                    officia fugiat illum facilis tenetur labore
+                    magni!Lorem ipsum dolor sit</p>
+            </div>
+            <div class="box">
+                <img src="lunch.webp" alt="">
+                <h2 class="h-secondary center">lunch Ordering</h2>
+                <p class="center">Hello i am rahul sharma i develop a food online company in our countary maiores
+                    officia fugiat illum facilis tenetur labore
+                    magni!Lorem ipsum dolor sit</p>
+            </div>
+            <div class="box">
+                <img src="dinner.jpg" alt="">
+                <h2 class="h-secondary center">Dinner Ordering</h2>
+                <p class="center">Hello i am rahul sharma i develop a food online company in our countary maiores
+                    officia fugiat illum facilis tenetur labore
+                    magni!Lorem ipsum dolor sit</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="apple.webp" alt="">
+            </div>
+            <div class="client-item">
+                <img src="microsoft.webp" alt="">
+            </div>
+            <div class="client-item">
+                <img src="instagram.jfif" alt="">
+            </div>
+            <div class="client-item">
+                <img src="facebook.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="hp.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contect Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="Name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Phone:</label>
+                    <input type="Phone" name="Phone" id="Phone" placeholder="Enter your Phone no.">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="Email" name="Email" id="Email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="Message">Message:</label>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; wwww.myOnlineMeal.com. All rights reserved |
+        </div>
+    </footer>
+</body>
+
+</html>
